@@ -1,23 +1,20 @@
-// ===== 1) زر الثيم (الميزة الإجبارية) =====
 const themeBtn = document.getElementById("theme-toggle");
-const root = document.documentElement; // عنصر <html>
+const root = document.documentElement;
 
-// لو المستخدم اختار ثيم قبل، نرجعه
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme) {
   root.setAttribute("data-theme", savedTheme);
 }
 updateButtonText();
 
-// لما المستخدم يضغط على الزر
 themeBtn.addEventListener("click", function () {
   const current = root.getAttribute("data-theme");
   let next;
 
-  if (current === "light") {
-    next = "dark";
-  } else {
+  if (current === "dark") {
     next = "light";
+  } else {
+    next = "dark";
   }
 
   root.setAttribute("data-theme", next);
@@ -33,8 +30,11 @@ function updateButtonText() {
   }
 }
 
-// ===== 2) قائمة الموبايل =====
 const menuBtn = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 
-menuBtn.addEventListener("click", function () {
+if (menuBtn) {
+  menuBtn.addEventListener("click", function () {
+    navLinks.classList.toggle("open");
+  });
+}

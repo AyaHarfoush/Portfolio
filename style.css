@@ -1,4 +1,4 @@
-/* ===== الألوان (بالاسم) ===== */
+
 :root {
   --bg: aliceblue;
   --box: white;
@@ -6,21 +6,20 @@
   --soft-text: slategray;
   --main: royalblue;
   --main-text: white;
-  --line: lightsteelblue;
+  --line: lightsteelblue; 
 }
 
-/* لما يضغط على زر الثيم، الـ JS بيغير data-theme لـ dark */
 [data-theme="dark"] {
-  --bg: midnightblue;
-  --box: navy;
-  --text: aliceblue;
-  --soft-text: lightsteelblue;
+  --bg: black;
+  --box: black;
+  --text: whitesmoke;
+  --soft-text: darkgray;
   --main: deepskyblue;
-  --main-text: midnightblue;
-  --line: darkslateblue;
+  --main-text: black;
+  --line: dimgray;
 }
+   
 
-/* ===== عام ===== */
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +46,7 @@ ul {
   list-style: none;
 }
 
-/* ===== النافبار ===== */
+/* Header & Navbar */
 .header {
   position: sticky;
   top: 0;
@@ -99,7 +98,7 @@ ul {
   display: none;
 }
 
-/* ===== الأقسام ===== */
+/* Sections */
 .section {
   max-width: 1000px;
   margin: 0 auto;
@@ -118,7 +117,7 @@ ul {
   margin: 25px 0 15px;
 }
 
-/* ===== About ===== */
+/* About Section & Profile Image */
 .about {
   display: flex;
   align-items: center;
@@ -126,11 +125,12 @@ ul {
 }
 
 .profile-img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: auto;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 24%;
   border: 5px solid var(--main);
+  flex-shrink: 0;
 }
 
 .about-text h1 {
@@ -147,7 +147,7 @@ ul {
   margin-bottom: 15px;
 }
 
-/* ===== الأزرار ===== */
+/* Buttons */
 .btn {
   display: inline-block;
   background: var(--main);
@@ -163,7 +163,7 @@ ul {
   opacity: 0.8;
 }
 
-/* ===== الكروت ===== */
+/* Grid & Cards */
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -219,7 +219,7 @@ ul {
   color: var(--main-text);
 }
 
-/* ===== مشروع التخرج ===== */
+/* Graduation Section */
 .grad {
   background: var(--box);
   border: 1px solid var(--line);
@@ -258,6 +258,7 @@ ul {
   gap: 20px;
 }
 
+/* تم التصحيح: كانت white ثابتة فكانت بتبوّظ الوضع الداكن */
 .grad-box {
   flex: 1 1 250px;
   background: var(--bg);
@@ -266,7 +267,7 @@ ul {
   padding: 15px;
 }
 
-/* ===== الهوايات ===== */
+/* Hobbies */
 .hobbies {
   display: flex;
   flex-wrap: wrap;
@@ -278,28 +279,9 @@ ul {
   background: var(--box);
   border: 1px solid var(--line);
   padding: 10px 22px;
-  border-radius: 30px;
 }
 
-/* ===== التواصل ===== */
-.contact-info {
-  text-align: center;
-  color: var(--soft-text);
-  margin-bottom: 20px;
-}
-
-.form {
-  max-width: 550px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  background: var(--box);
-  border: 1px solid var(--line);
-  padding: 30px;
-  border-radius: 10px;
-}
-
+/* Forms & Inputs */
 .form input,
 .form textarea {
   padding: 10px;
@@ -322,7 +304,7 @@ ul {
   color: green;
 }
 
-/* ===== الفوتر ===== */
+/* Footer */
 .footer {
   background: var(--box);
   border-top: 1px solid var(--line);
@@ -331,7 +313,7 @@ ul {
   color: var(--soft-text);
 }
 
-/* ===== الموبايل (Media Queries) ===== */
+/* Responsive Media Queries */
 @media (max-width: 768px) {
   .btn-menu {
     display: inline-block;
@@ -363,8 +345,8 @@ ul {
   }
 
   .profile-img {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
   }
 }
 
