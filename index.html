@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Aya Harfoush, Cybersecurity Graduate">
+  <title>Aya Harfoush | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header / Navbar ===== -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home" class="logo">Aya Harfoush</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-theme" type="button" aria-label="Toggle theme">🌙 Dark</button>
+        <button id="menu-toggle" class="btn-menu" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+
+    <!-- ===== About Me ===== -->
+    <section id="about" class="section about">
+      <div class="about-photo">
+        <img src="assets/profile.jpg.jpeg" alt="Aya Harfoush" class="profile-img">
+      </div>
+      <div class="about-text">
+        <h1> Aya Harfoush</h1>
+        <h2>Cybersecurity Graduate</h2>
+        <p>
+          Cybersecurity graduate from Yarmouk University with a solid academic foundation in
+          network security, penetration testing, and secure system design, along with practical
+          web development skills. Passionate about applying machine learning to real-world security
+          challenges, as demonstrated in my graduation project on phishing detection. Eager to start
+          my career in a cybersecurity role where I can grow my technical skills while contributing
+          to protecting systems and data.
+        </p>
+        <p class="meta">📍 Amman, Jordan &nbsp;|&nbsp; 🎓 B.Sc. in Cybersecurity, Yarmouk University (2026)</p>
+        <a href="#contact" class="btn">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ===== Skills Grid ===== -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+
+      <h3 class="sub-title">Technical Skills</h3>
+      <div class="grid">
+        <div class="card"><h4> Networking</h4><p>Fundamentals and network simulation using Cisco Packet Tracer.</p></div>
+        <div class="card"><h4> Penetration Testing</h4><p>Foundational knowledge of concepts and methodologies.</p></div>
+        <div class="card"><h4> Machine Learning</h4><p>Basics of ML applied to cybersecurity use cases.</p></div>
+        <div class="card"><h4> Full Stack Web</h4><p>Front-end and back-end development fundamentals.</p></div>
+        <div class="card"><h4> Cybersecurity</h4><p>Network security, secure system fundamentals.</p></div>
+        <div class="card"><h4> IT Support</h4><p>Hardware diagnostics, Windows/Linux setup, software troubleshooting.</p></div>
+      </div>
+
+      <h3 class="sub-title">Soft Skills</h3>
+      <div class="grid">
+        <div class="card"><h4>⚡ Fast Learner</h4><p>Strong analytical and problem-solving abilities.</p></div>
+        <div class="card"><h4>🤝 Teamwork</h4><p>Good communication and effective collaboration.</p></div>
+        <div class="card"><h4>⏱️ Time Management</h4><p>Works well under pressure.</p></div>
+        <div class="card"><h4>🎯 Attention to Detail</h4><p>Structured and methodical approach.</p></div>
+      </div>
+    </section>
+
+    <!-- ===== Project Showcase (Projects 00-03) ===== -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Project Showcase</h2>
+      <div class="grid">
+
+        <article class="card project">
+          <span class="tag">Project 00</span>
+          <h4>Html Fundamentals</h4>
+          <p>A set of six HTML Exercises where I bulit a valid page skeleton,structured text, a page with images and links,lists and a data table, an accessible registration form with validation, and a full semantic blog page.</p>
+
+          <div class="project-links">
+            <a href="https://github.com/AyaHarfoush/html-exercises" target="_blank" rel="noopener"> GitHub </a>
+          </div>  
+        </article>
+    
+        <article class="card project">
+          <span class="tag">Project 01</span>
+          <h4>CSS & Visual Presentation</h4>
+          <p> A set of CSS Exercises where I Bulit a flexbox navbar and responsive card grid, practiced fixed and absolute positioning with a notification badge and back-to-top button,drew five shapes using pure CSS, compared opacity with RGBA transparency, and demostrated the box model with content-box versus border-box.</p>
+        <div class="project-links">
+            <a href="https://github.com/AyaHarfoush/CSS" target="_blank" rel="noopener"> GitHub </a>
+        </div>
+        </article>
+
+
+        <article class="card project">
+          <span class="tag">Project 02</span>
+          <h4>JavaScript</h4>
+          <p>Where my pages came to life. I worked with variables and data types in the DevTools console,
+    wrote functions with conditional logic and edge-case testing, and manipulated the live DOM
+    with querySelector, textContent and classList.
+    I built an event-driven counter using addEventListener, and finished with a
+    dynamic task manager where users add, complete and delete tasks, with a counter that stays in sync..</p>
+        <div class="project-links">
+             <a href="https://github.com/AyaHarfoush/Javascript" target="_blank" rel="noopener"> GitHub </a>
+        </div>
+        </article>
+
+
+        
+
+   <!-- ===== Graduation Project ===== -->
+<section id="graduation" class="section">
+  <h2 class="section-title">Graduation Project</h2>
+
+  <div class="grad">
+    <h3 class="grad-title">QR and URL Phishing Detection: A Machine Learning Based Approach</h3>
+    <p class="grad-intro">
+      A Flask web application that detects phishing in both URLs and QR codes inside one unified system.
+      The user either scans a QR code or enters a link directly, and the app classifies it as
+      Safe, Suspicious or Malicious, then explains the specific reasons behind its decision.
+    </p>
+
+    <h4>The Idea</h4>
+    <p>
+      The project solves the phishing problem found in links and QR codes by using machine learning
+      together with a layer of programmed rules. The goal is to analyze a link, extract features from it,
+      and classify it with high accuracy. The results were accurate and the system detects more than
+      one type of attack, such as brand impersonation, XSS and a specific type of SQL injection.
+    </p>
+
+    <h4>Architecture</h4>
+    <p>
+      It is a Flask-based web application that follows a client-server architecture. Flask receives
+      the link from the form, converts it into numeric data, and the backend processes it using the
+      machine learning model.
+    </p>
+
+    <h4>Why Random Forest</h4>
+    <p>
+      A model without an algorithm is just an empty file. The Random Forest algorithm is what gives
+      the model its intelligence. I chose it because it handles complex non-linear data well and reduces
+      the problem of overfitting, which gives high accuracy when detecting diverse phishing links.
+    </p>
+
+    <h4>Dataset</h4>
+    <p>
+      I used the UCI Phishing Websites dataset, which is prepared data based on the research paper
+      "Phishing Website Features Extraction Based on Heuristic Evaluation" published by Prof. Rami Mohammad.
+      The dataset contains the features already extracted from each website, and my design decisions
+      (such as the dots threshold below) are based on that paper and on statistical analysis of the data.
+    </p>
+
+    <h4>How I Trained the Model</h4>
+    <ul>
+      <li>Collected the data and extracted the features.</li>
+      <li>Chose the suitable algorithm (Random Forest).</li>
+      <li>Studied the relationships between the 31 features to understand the patterns that separate phishing sites from legitimate ones.</li>
+      <li>Split the data into a training set and a testing set.</li>
+    </ul>
+
+    <h4>Libraries</h4>
+    <ul>
+      <li><strong>Flask:</strong> connects the front end with the back end.</li>
+      <li><strong>pandas:</strong> reads the whole dataset.</li>
+      <li><strong>scikit-learn:</strong> lets the computer learn the rules from the data.</li>
+      <li><strong>joblib:</strong> moves the trained model from the training stage to the running application.</li>
+      <li><strong>tldextract:</strong> extracts the domain parts of a URL.</li>
+    </ul>
+
+    <h4>Two Layers of Detection</h4>
+    <div class="grad-cols">
+      <div class="grad-box">
+        <h5>Heuristic Engine (rules written in code)</h5>
+        <ul>
+          <li>SQL Injection</li>
+          <li>XSS</li>
+          <li>Brand Impersonation</li>
+          <li>IP-Based URL</li>
+          <li>Open redirect attacks</li>
+          <li>Random-looking domain patterns</li>
+        </ul>
+      </div>
+      <div class="grad-box">
+        <h5>Random Forest Model (detected by the model)</h5>
+        <ul>
+          <li>URL length attack</li>
+          <li>Double slash redirection</li>
+          <li>URL shortening services</li>
+          <li>Missing HTTPS encryption</li>
+        </ul>
+      </div>
+    </div>
+    <p>
+      The rules are only primary filters that help the user understand why a link is suspicious.
+      The final decision, and the high-confidence percentage, comes from the model based on the features.
+    </p>
+
+    <h4>Explainable Results</h4>
+    <p>
+      The app does not only say "malicious" or "safe". It gives the specific reasons behind each
+      classification, telling the user why the link is malicious or why it is safe.
+    </p>
+
+    <h4>Design Decisions</h4>
+    <ul>
+      <li>
+        <strong>Missing HTTPS:</strong> the https check is one of the extracted features. If a link does not
+        start with https, the dataset treats that site as lacking encryption, so it is counted as a reason to be suspicious.
+        A browser will only start a link with https if the server was checked and has a valid SSL certificate.
+      </li>
+      <li>
+        <strong>More than 3 dots:</strong> a rule warns that the link is suspicious if it has more than 3 dots.
+        The number comes from statistical analysis of the UCI dataset (the having_sub_domain column).
+        Normal links can contain up to 3 dots, so lowering the threshold would flag real, trusted
+        links as suspicious (false positives).
+      </li>
+      <li>
+        <strong>Spaces in links:</strong> tldextract does not support spaces inside real web links,
+        so a link containing spaces cannot give a correct result.
+      </li>
+      <li>
+        <strong>A link ending with ?id=1:</strong> this is treated as a normal query, found on millions of trusted sites,
+        because the site is just asking the database to show product number 1. An injected link instead
+        contains symbols that force the database to break the original query and run a different command.
+      </li>
+    </ul>
+
+    <h4>Testing with Real Links</h4>
+    <p>
+      URLhaus links mostly focus on malware distribution, so they use clear and direct words such as bin,
+      exe, dll or random domain names. PhishTank links focus on stealing information: they look
+      technically clean, use https and subdomains that look official, and contain no suspicious words.
+      The system handles both styles through the combination of the rules and the model.
+    </p>
+
+    <h4>Scope and Limitations</h4>
+    <p>
+      The project focuses on phishing links. Traditional SQL injection happens after the user enters the
+      website and depends on what is typed into inputs such as username or password, not on the shape of the link.
+      However, some attacks of this type place the SQL commands inside the link itself, and that is
+      what my program can detect. It does this through static analysis: it checks the URL text and searches for
+      SQL signatures such as union select, drop table and insert into. It does not protect a database.
+    </p>
+    <p>
+      CSRF is not covered because it cannot be detected from the link alone. CSRF links look clean and
+      valid, and the attack happens through scripts injected into the link while the user is already logged in to a site.
+    </p>
+
+    <div class="project-links">
+      <a href="https://github.com/AyaHarfoush/Graduation-Project" target="_blank" rel="noopener">GitHub Repo</a>
+      <a href="https://graduation-project-3.onrender.com" target="_blank" rel="noopener"> Live Demo</a>
+    </div>
+  </div>
+</section>
+
+    <!-- ===== Hobbies ===== -->
+    <section id="hobbies" class="section">
+      <h2 class="section-title">Hobbies</h2>
+      <ul class="hobbies">
+        <li> Sports </li>
+        <li> Drawing </li> 
+      </ul>
+      
+    </section>
+
+    <!-- ===== Contact Form ===== -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact Me</h2>
+      <form id="contact-form" class="form" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+
+        <p id="form-status" class="form-status" role="status"></p>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>📧 ayaharfoush43@gmail.com &nbsp;|&nbsp; 📞 +962 7 7630 2557</p>
+    <p>&copy; <span id="year"></span> Aya Harfoush. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
